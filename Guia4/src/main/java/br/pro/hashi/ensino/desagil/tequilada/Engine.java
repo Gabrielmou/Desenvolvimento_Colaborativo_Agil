@@ -6,5 +6,6 @@ public class Engine {
 	 Player humanPlayer;
 	 
 	 void update(){
+		cpuPlayer.move(1, 2);
 	 }
 }
