@@ -1,42 +1,34 @@
 package br.pro.hashi.ensino.desagil.tequilada;
 
-import java.io.BufferedReader;
-import java.lang.StringBuilder;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import javax.swing.JFrame;
+import javax.swing.Timer;
 
 public class Main {
 	public static void main(String[] args) {
-		BufferedReader leitor = null;
-		
-		try{
-	         File arquivo = new File("C:/Users/Gabriel Moura/workspace/GabrielMoura/src/main/java/br/pro/hashi/ensino/desagil/tequilada/incre2.txt");
-	         leitor = new BufferedReader(new FileReader(arquivo));
-	         
-	         String linha;
-		     linha = leitor.readLine();
-		     
-		     while ((linha = leitor.readLine()) != null) {
-		        StringBuilder novalinha = new StringBuilder(linha);
-		        
-		        for (int i = 0; i < novalinha.length(); i++) {
-		        	if (novalinha.charAt(i) == '#') {
-		        		novalinha.setCharAt(i, 'X');
-		        	}		
-		        }
-		        System.out.println(novalinha);
-		     }
-	    } catch (IOException e) {
-	        e.printStackTrace();
-	    } finally {
-	        try {
-	         leitor.close();
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
-	    }
+		javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+            	Model model = new Model();
 
-	  }
+            	View view = new View(model);
 
+            	Controller controller = new Controller(model, view);
+            	
+            	JFrame frame = new JFrame();
+
+            	frame.setContentPane(view);
+
+            	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+            	frame.setResizable(false);
+
+            	frame.pack();
+
+            	frame.setVisible(true);
+
+            	Timer timer = new Timer(1000, controller);
+
+            	timer.start();
+            }
+        });
+	}
 }
