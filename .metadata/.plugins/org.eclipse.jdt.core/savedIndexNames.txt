@@ -1,0 +1,6 @@
+INDEX VERSION 1.129+C:\Users\Gabriel Moura\Documents\Insper\3 Semestre\Desenvolvimento Colaborativo Ágil\Meu Repositorio\Desenvolvimento_Colaborativo_Agil\.metadata\.plugins\org.eclipse.jdt.core
+2636016846.index
+4169954951.index
+1726538532.index
+2408269329.index
+300929970.index

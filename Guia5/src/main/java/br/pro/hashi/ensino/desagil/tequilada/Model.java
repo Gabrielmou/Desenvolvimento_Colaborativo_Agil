@@ -6,7 +6,7 @@ public class Model {
 	private HumanPlayer humanPlayer;
 
 	public Model() {
-		board = new Board("board.txt");
+		board = new Board("incre2.txt");
 
 		cpuPlayer = new CpuPlayer(board.getNumRows() - 1, board.getNumCols() - 1);
 		humanPlayer = new HumanPlayer(0, 0);
