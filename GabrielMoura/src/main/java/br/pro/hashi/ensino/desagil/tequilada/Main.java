@@ -14,6 +14,8 @@ public class Main {
             	Controller controller = new Controller(model, view);
             	
             	JFrame frame = new JFrame();
+            	
+            	frame.addKeyListener(controller);
 
             	frame.setContentPane(view);
 
