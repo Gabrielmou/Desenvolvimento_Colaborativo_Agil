@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;Guia6&apos;&#x0D;&#x0A;- Original project: &apos;Guia6&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Guia6/resources&#x0D;&#x0A;     Guia6/java&#x0D;&#x0A;     incre2.txt" description="Delete elements" element1="incre2.txt" element2="/resources" element3="/java" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1520956113072" subPackages="false" version="1.0"/>
+</session>
