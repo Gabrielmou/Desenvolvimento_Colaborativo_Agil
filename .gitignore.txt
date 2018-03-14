@@ -1,0 +1,7 @@
+GabrielMoura\bin
+.metadata
+Guia2\bin
+Guia3\bin
+Guia4\bin
+Guia5\bin
+Guia6\bin
